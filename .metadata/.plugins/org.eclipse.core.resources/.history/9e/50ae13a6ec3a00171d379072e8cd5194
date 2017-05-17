@@ -1,0 +1,18 @@
+package com.java;
+
+class Immutable{
+	private final Integer i;
+	private final String s;
+	
+	public Immutable() {
+	}
+}
+
+public class immutable {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.java;
+
+class Singletone{
+	 static private Singletone singletone = new Singletone();
+	 public Singletone() {
+		// TODO Auto-generated constructor stub
+	}
+	 public static Singletone getInstance(){
+		 if(singletone != null){
+			 return singletone;
+		 }else {
+			return new Singletone();
+		}
+	 }
+}
+
+public class Singleton {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

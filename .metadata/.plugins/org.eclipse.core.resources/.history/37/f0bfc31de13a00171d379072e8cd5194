@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+<context:annotation-config/>
+<context:component-scan base-package="com.capgemini"></context:component-scan>
+
+<bean id="emp" name = "myFoo,kingBean,notBar" class="com.capgemini.model.Employee">
+<property name="id" value="1"></property>
+<property name="name" value="Capge"></property>
+<!-- <property name="address" ref="address"></property> -->
+</bean> 
+
+
+
+<bean id="empconst" name = "myFoo1,kingBean1,notBar1" class="com.capgemini.model.Employee">
+<constructor-arg index="0" value="1"/>
+<constructor-arg index="1" value="capgemini"/>
+</bean>
+
+<bean id="address" class="com.capgemini.model.Address">
+<property name="depId" value="1"></property>
+<property name="depName" value="IT"></property>
+</bean>
+
+</beans>

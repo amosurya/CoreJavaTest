@@ -1,0 +1,15 @@
+package com.java;
+
+class Singletone{
+	 static private Singletone singletone = new Singletone();
+	 
+}
+
+public class Singleton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
